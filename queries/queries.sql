@@ -173,7 +173,7 @@ ON persona.id = profesor.id_profesor
 LEFT JOIN asignatura
 ON profesor.id_profesor = asignatura.id_profesor
 WHERE persona.tipo= 'profesor'
-GROUP BY persona.id, persona.nombre, persona.apellido1, persona.apellido2 ORDER BY total DESC, persona.apellido1 ASC, persona.apellido2 ASC;
+GROUP BY persona.id, persona.nombre, persona.apellido1, persona.apellido2 ORDER BY total DESC;
 
 -- 25. Retorna totes les dades de l'alumne/a més jove. (*)
 SELECT persona.id, persona.nif, persona.nombre, persona.apellido1, persona.apellido2, persona.ciudad, persona.direccion, persona.telefono, persona.fecha_nacimiento, persona.sexo, persona.tipo
